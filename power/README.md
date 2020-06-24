@@ -16,6 +16,8 @@ power.o:     file format pe-i386
 Disassembly of section .text:
 
 00000000 <_power>:
+
+
    0:   55                      push   %ebp
    1:   89 e5                   mov    %esp,%ebp
    3:   83 ec 10                sub    $0x10,%esp
