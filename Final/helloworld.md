@@ -7,5 +7,14 @@
    $ mkdir hello_world
    $ cd hello_world
    ```
+2. 新建一个源文件，命名为 main.rs。Rust 源文件总是以 .rs 扩展名结尾。如果文件名包含多个单词，使用下划线分隔它们。
+3. 打开刚创建的 main.rs 文件，输入以下的代码
 
+   文件名: main.rs
+   ```js
+   fn main() {
+       println!("Hello, world!");
+   }
+   ```
+   
 
