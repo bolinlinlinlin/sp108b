@@ -16,5 +16,11 @@
        println!("Hello, world!");
    }
    ```
+4. 保存文件，并回到终端窗口。在 Linux 或 macOS 上，输入如下命令，编译并运行文件：
+   ```js
+   $ rustc main.rs
+   $ ./main
+   Hello, world!
+   ```
    
 
