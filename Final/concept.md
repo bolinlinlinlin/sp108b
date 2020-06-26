@@ -21,7 +21,9 @@
      4 |     x = 6;
        |     ^^^^^ cannot assign twice to immutable variable
      ```
+
      ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_error.jpg?raw=true)
+
      錯誤信息指出錯誤的原因是 不能對不可變變量 x 二次賦值（cannot assign twice to immutable variable x），因為你嘗試對不可變變量 x 賦第二個值。
      
      可以在變量名之前加 mut 來使其可變。除了允許改變值之外，mut 向讀者表明了其他代碼將會改變這個變量值的意圖。
@@ -33,7 +35,9 @@
        println!("The value of x is: {}", x);
      }
      ```
+
      ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_cargo_run.jpg?raw=true)
+     
 # 數據類型
      在 Rust 中，每一個值都屬於某一個 數據類型（data type），這告訴 Rust 它被指定為何種數據，以便明確數據處理方式。我們將看到兩類數據類型子集：標量（scalar）和復合（compound）。
      Rust 是 靜態類型（statically typed）語言，也就是說在編譯時就必須知道所有變量的類型。
@@ -94,7 +98,7 @@
        println!("The value of y is: {}", y);
      }
      ```
-# 3. 函數如何工作
+# 函數如何工作
      Rust 中的函數定義以 fn 開始並在函數名後跟一對圓括號。大括號告訴編譯器哪裡是函數體的開始和結尾。
 
 
