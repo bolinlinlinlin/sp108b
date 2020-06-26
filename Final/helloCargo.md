@@ -23,7 +23,7 @@ Cargo 是 Rust 的構建系統和包管理器。大多數 Rustacean 們使用 Ca
       Compiling hello_cargo v0.1.0 (file:///projects/hello_cargo)
        Finished dev [unoptimized + debuginfo] target(s) in 2.85 secs
    ```
-   ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/cargo_build_run.jpg?raw=true)
+![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/cargo_build_run.jpg?raw=true)
    這個命令會創建一個可執行文件 target/debug/hello_cargo （在 Windows 上是 target\debug\hello_cargo.exe），而不是放在目前目錄下。可以通過這個命令運行可執行文件：
    ```js
    $ ./target/debug/hello_cargo #
@@ -35,7 +35,7 @@ Cargo 是 Rust 的構建系統和包管理器。大多數 Rustacean 們使用 Ca
      Running `target/debug/hello_cargo`
    Hello, world!
    ```
-   ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/run_hello_cargo.jpg?raw=true)
+![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/run_hello_cargo.jpg?raw=true)
 7. cargo check,該命令快速檢查代碼確保其可以編譯，但並不產生可執行文件：
    ```js
    $ cargo check
