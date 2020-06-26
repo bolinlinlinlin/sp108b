@@ -1,43 +1,43 @@
 # 變量和可變性
     變量默認是不可改變的（immutable）
-     當變量不可變時，一旦值被綁定一個名稱上，你就不能改變這個值。為了對此進行說明，使用 cargo new variables 命令在 projects 目錄生成一個叫做 variables 的新項目。
-     在新建的 variables 目錄，打開 src/main.rs 並將代碼替換為如下代碼，這些代碼還不能編譯：
-     ```js
-     fn main() {
-       let x = 5;
-       println!("The value of x is: {}", x);
-       x = 6;
-       println!("The value of x is: {}", x)
-     }
-     ```
-     保存並使用 cargo run 運行程序。應該會看到一條錯誤信息，如下輸出所示：
-     ```js
-     error[E0384]: cannot assign twice to immutable variable `x`
-      --> src/main.rs:4:5
-       |
-     2 |     let x = 5;
-       |         - first assignment to `x`
-     3 |     println!("The value of x is: {}", x);
-     4 |     x = 6;
-       |     ^^^^^ cannot assign twice to immutable variable
-     ```
+    當變量不可變時，一旦值被綁定一個名稱上，你就不能改變這個值。為了對此進行說明，使用 cargo new variables 命令在 projects 目錄生成一個叫做 variables 的新項目。
+    在新建的 variables 目錄，打開 src/main.rs 並將代碼替換為如下代碼，這些代碼還不能編譯：
+    ```js
+    fn main() {
+      let x = 5;
+      println!("The value of x is: {}", x);
+      x = 6;
+      println!("The value of x is: {}", x)
+    }
+    ```
+    保存並使用 cargo run 運行程序。應該會看到一條錯誤信息，如下輸出所示：
+    ```js
+    error[E0384]: cannot assign twice to immutable variable `x`
+     --> src/main.rs:4:5
+      |
+    2 |     let x = 5;
+      |         - first assignment to `x`
+    3 |     println!("The value of x is: {}", x);
+    4 |     x = 6;
+      |     ^^^^^ cannot assign twice to immutable variable
+    ```
 
-     ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_error.jpg?raw=true)
+    ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_error.jpg?raw=true)
 
-     錯誤信息指出錯誤的原因是 不能對不可變變量 x 二次賦值（cannot assign twice to immutable variable x），因為你嘗試對不可變變量 x 賦第二個值。
-     
-     可以在變量名之前加 mut 來使其可變。除了允許改變值之外，mut 向讀者表明了其他代碼將會改變這個變量值的意圖。
-     ```js
-     fn main() {
-       let mut x = 5;
-       println!("The value of x is: {}", x);
-       x = 6;
-       println!("The value of x is: {}", x);
-     }
-     ```
+    錯誤信息指出錯誤的原因是 不能對不可變變量 x 二次賦值（cannot assign twice to immutable variable x），因為你嘗試對不可變變量 x 賦第二值。
+    
+    可以在變量名之前加 mut 來使其可變。除了允許改變值之外，mut 向讀者表明了其他代碼將會改變這個變量值的意圖。
+    ```js
+    fn main() {
+      let mut x = 5;
+      println!("The value of x is: {}", x);
+      x = 6;
+      println!("The value of x is: {}", x);
+    }
+    ```
 
-     ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_cargo_run.jpg?raw=true)
-     
+    ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_cargo_run.jpg?raw=true)
+
 # 數據類型
      在 Rust 中，每一個值都屬於某一個 數據類型（data type），這告訴 Rust 它被指定為何種數據，以便明確數據處理方式。我們將看到兩類數據類型子集：標量（scalar）和復合（compound）。
      Rust 是 靜態類型（statically typed）語言，也就是說在編譯時就必須知道所有變量的類型。
