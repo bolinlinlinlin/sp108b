@@ -1,4 +1,4 @@
-# 1. 變量和可變性
+# 變量和可變性
     變量默認是不可改變的（immutable）
      當變量不可變時，一旦值被綁定一個名稱上，你就不能改變這個值。為了對此進行說明，使用 cargo new variables 命令在 projects 目錄生成一個叫做 variables 的新項目。
      在新建的 variables 目錄，打開 src/main.rs 並將代碼替換為如下代碼，這些代碼還不能編譯：
@@ -34,7 +34,7 @@
      }
      ```
      ![image](https://github.com/bolinlinlinlin/sp108b/blob/master/Final/picture/variables_cargo_run.jpg?raw=true)
-# 2. 數據類型
+# 數據類型
      在 Rust 中，每一個值都屬於某一個 數據類型（data type），這告訴 Rust 它被指定為何種數據，以便明確數據處理方式。我們將看到兩類數據類型子集：標量（scalar）和復合（compound）。
      Rust 是 靜態類型（statically typed）語言，也就是說在編譯時就必須知道所有變量的類型。
 
