@@ -4,8 +4,9 @@
      在新建的 variables 目錄，打開 src/main.rs 並將代碼替換為如下代碼，這些代碼還不能編譯：
      ```js
      fn main() {
-    let x = 5;
-    println!("The value of x is: {}", x);
-    x = 6;
-    println!("The value of x is: {}", x);
-    }
+       let x = 5;
+       println!("The value of x is: {}", x);
+       x = 6;
+       println!("The value of x is: {}", x)
+     }
+     ```
