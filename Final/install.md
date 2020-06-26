@@ -1,4 +1,4 @@
-# This is an <h1> tag
+# installing
 
 我在Linux系統的模擬器安裝
 
